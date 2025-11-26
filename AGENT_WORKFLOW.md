@@ -13,7 +13,8 @@
 "Create a folder structure for the backend using Hexagonal Architecture (Ports & Adapters) as strictly required by the assignment."
 
 Generated Snippet:  
-The agent generated a strict directory tree separating core (business logic) from adapters (infrastructure), adhering to the assignment's architectural constraints.  
+The agent generated a strict directory tree separating core (business logic) from adapters (infrastructure), adhering to the assignment's architectural constraints. 
+```
 src/  
   core/  
     domain/ (Entities)  
@@ -21,7 +22,7 @@ src/
   adapters/  
     inbound/ (API Controllers)  
     outbound/ (Database Repositories)
-
+```
 *Observation:* This saved significant setup time and ensured the "Architecture" evaluation criterion was met immediately without manual restructuring.
 
 ### **Example 2: Mathematical Logic Implementation**
@@ -31,7 +32,7 @@ src/
 "Read the ESSF Calculation Methodologies PDF and implement the Compliance Balance formula in TypeScript."
 
 **Generated Snippet (Refined):**
-
+```
 // Compliance Balance \= (Target \- Actual) \* Total Energy  
 const cb\_gco2eq \= (REGULATION.TARGET\_2025 \- ghgie\_actual) \* total\_energy\_mj;
 
@@ -40,7 +41,7 @@ const cb\_gco2eq \= (REGULATION.TARGET\_2025 \- ghgie\_actual) \* total\_energy\
 const abs\_deficit \= Math.abs(cb\_gco2eq);  
 const vlsfo\_eq\_tonnes \= abs\_deficit / (ghgie\_actual \* REGULATION.VLSFO\_LCV);  
 const penalty \= Math.floor(vlsfo\_eq\_tonnes \* REGULATION.PENALTY\_RATE\_EUR);
-
+```
 *Refinement:* The agent correctly identified the constants ($89.34\~gCO\_2e/MJ$ target) and the specific penalty logic (VLSFO equivalent) directly from the provided PDF context, correcting an initial assumption about penalty units.
 
 ## **Validation / Corrections**
